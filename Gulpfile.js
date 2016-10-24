@@ -6,7 +6,7 @@
 // Set patch name - will be used to name .zip files.
 // Alternatively, when calling 'gulp makeZips' on the command line, pass in the
 // argument '--patchname MyPatchName' to override
-var patchName = 'NoPatchName';
+var patchName = 'RefinedStorage';
 // Initial size of source images - set this to the starting size of the patch
 // E.g. if resizing a 128x patch, set to 128
 var initialSize = 512;
