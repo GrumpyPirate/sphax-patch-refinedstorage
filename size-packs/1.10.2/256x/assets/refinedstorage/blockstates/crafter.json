@@ -1,0 +1,94 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "cube",
+    "textures": {
+      "particle": "refinedstorage:blocks/crafter_side",
+      "crafter_side": "refinedstorage:blocks/crafter_side",
+      "crafter_side_90": "refinedstorage:blocks/crafter_side_90",
+      "crafter_side_180": "refinedstorage:blocks/crafter_side_180",
+      "crafter_side_270": "refinedstorage:blocks/crafter_side_270",
+      "crafter_front": "refinedstorage:blocks/crafter_front"
+    },
+    "uvlock": true
+  },
+  "variants": {
+    "connected": {
+      "true": {
+        "textures": {
+          "crafter_side": "refinedstorage:blocks/crafter_side_connected",
+          "crafter_side_90": "refinedstorage:blocks/crafter_side_connected_90",
+          "crafter_side_180": "refinedstorage:blocks/crafter_side_connected_180",
+          "crafter_side_270": "refinedstorage:blocks/crafter_side_connected_270",
+          "crafter_front": "refinedstorage:blocks/crafter_front_connected"
+        }
+      },
+      "false": {
+        "textures": {
+        }
+      }
+    },
+    "direction": {
+      "north": {
+        "textures": {
+          "down": "#crafter_side",
+          "up": "#crafter_side",
+          "north": "#crafter_front",
+          "east": "#crafter_side_90",
+          "south": "refinedstorage:blocks/crafter_bottom",
+          "west": "#crafter_side_270"
+        }
+      },
+      "east": {
+        "textures": {
+          "down": "refinedstorage:blocks/crafter_bottom",
+          "up": "#crafter_side_90",
+          "north": "#crafter_side_270",
+          "east": "#crafter_front",
+          "south": "#crafter_side_90",
+          "west": "refinedstorage:blocks/crafter_bottom"
+        }
+      },
+      "south": {
+        "textures": {
+          "down": "refinedstorage:blocks/crafter_bottom",
+          "up": "#crafter_side_180",
+          "north": "refinedstorage:blocks/crafter_bottom",
+          "east": "#crafter_side_270",
+          "south": "#crafter_front",
+          "west": "#crafter_side_90"
+        }
+      },
+      "west": {
+        "textures": {
+          "down": "refinedstorage:blocks/crafter_bottom",
+          "up": "#crafter_side_270",
+          "north": "#crafter_side_90",
+          "east": "refinedstorage:blocks/crafter_bottom",
+          "south": "#crafter_side_270",
+          "west": "#crafter_front"
+        }
+      },
+      "up": {
+        "textures": {
+          "down": "refinedstorage:blocks/crafter_bottom",
+          "up": "#crafter_front",
+          "north": "#crafter_side",
+          "east": "#crafter_side",
+          "south": "#crafter_side",
+          "west": "#crafter_side"
+        }
+      },
+      "down": {
+        "textures": {
+          "down": "#crafter_front",
+          "up": "refinedstorage:blocks/crafter_bottom",
+          "north": "#crafter_side_180",
+          "east": "#crafter_side_180",
+          "south": "#crafter_side_180",
+          "west": "#crafter_side_180"
+        }
+      }
+    }
+  }
+}
