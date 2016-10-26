@@ -1,3 +1,5 @@
+![RefinedStorage PureBDCraft Patch](./Patch-Preview.png)
+
 ## A [PureBDCraft](http://bdcraft.net/) patch for the [RefinedStorage](https://minecraft.curseforge.com/projects/refined-storage) Minecraft mod
 
 ## Uses [Sphaxify](https://github.com/GrumpyPirate/Sphaxify) to build and optimise packs
