@@ -9,8 +9,8 @@
   },
   "license": "MIT",
   "scripts": {
-    "optimise": "gulp optimise",
-    "makezips": "gulp makeZips",
+    "build": "gulp optimise",
+    "zip": "gulp makeZips",
     "watch": "gulp watch"
   },
   "main": "Gulpfile.js",
