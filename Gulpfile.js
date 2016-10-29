@@ -61,16 +61,48 @@ var paths = {
 /* -----------------------------------------------------------------------------
  * Core logic below, only edit the below if you're brave/bored/interested
  * -------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+ * GULP PLUGINS
+ * -------------------------------------------------------------------------- */
+// Gulp + plugins
+var gulp = require('gulp'),
+    $ = require('gulp-load-plugins')({
+        pattern: '*',
+        scope: ['dependencies', 'devDependencies'],
+        camelize: true
+    }),
+// Node core modules
+    path = require('path'),
+    fs = require('fs'),
+// Get command line args
+    args = $.minimist(process.argv.slice(2));
+
 // custom plugin settings
 // -----------------------------------------------------------------------------
 var settings = {
+        // imagemin: {
+        //     // Default is 2 (8 trials)
+        //     optimizationLevel: 3,
+        //     keepBitDepth: false,
+        //     keepColorType: true,
+        //     keepPalette: false,
+        //     keepIDAT: false,
+        // }
         imagemin: {
-            // Default is 2 (8 trials)
-            optimizationLevel: 3,
-            keepBitDepth: false,
-            keepColorType: true,
-            keepPalette: false,
-            keepIDAT: false,
+            plugins: [
+                // $.imagemin.gifsicle(),
+                // $.imagemin.jpegtran(),
+                $.imagemin.optipng({
+                    optimizationLevel: 5,
+                    bitDepthReduction: true,
+                    colorTypeReduction: false,
+                    paletteReduction: true
+                }),
+                // $.imagemin.svgo()
+            ],
+            options: {
+                verbose: true
+            }
         }
     },
 // watched filename patterns
@@ -93,23 +125,6 @@ var settings = {
 
         return a;
     })();
-
-
-/* -----------------------------------------------------------------------------
- * GULP PLUGINS
- * -------------------------------------------------------------------------- */
-// Gulp + plugins
-var gulp = require('gulp'),
-    $ = require('gulp-load-plugins')({
-        pattern: '*',
-        camelize: true
-    }),
-// Node core modules
-    path = require('path'),
-    fs = require('fs'),
-// Get command line args
-    args = $.minimist(process.argv.slice(2));
-
 
 /* -----------------------------------------------------------------------------
  * GLOBAL FUNCTIONS
@@ -209,7 +224,8 @@ function resizeStream(dirname, size) {
             .pipe(filterCompressables)
                 // Measure file-by-file byte difference
                 .pipe($.bytediff.start())
-                    .pipe($.imageminOptipng(settings.imagemin)())
+                    // .pipe($.imageminOptipng(settings.imagemin)())
+                    .pipe($.imagemin(settings.imagemin.plugins, settings.imagemin.options))
                 .pipe($.bytediff.stop())
             .pipe(filterCompressables.restore)
         // Restore non-PNG files to stream
