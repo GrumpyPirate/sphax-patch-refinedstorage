@@ -9,4 +9,4 @@
 - Install [GraphicsMagick](http://www.graphicsmagick.org/download.html)
 - Open a terminal within the cloned project directory (e.g. `cd /path/to/sphax-patch-refinedstorage/`)
   - `npm install`
-- Once complete, `npm run optimise` can be used to build the size packs from the source files (512x/256x/128x, etc.).
+- Once complete, use `npm run optimise` to build every 512x/256x/128x/64x/32x size pack from the source files.
