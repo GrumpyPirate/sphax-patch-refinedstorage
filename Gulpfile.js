@@ -80,30 +80,30 @@ var gulp = require('gulp'),
 // custom plugin settings
 // -----------------------------------------------------------------------------
 var settings = {
-        // imagemin: {
-        //     // Default is 2 (8 trials)
-        //     optimizationLevel: 3,
-        //     keepBitDepth: false,
-        //     keepColorType: true,
-        //     keepPalette: false,
-        //     keepIDAT: false,
-        // }
         imagemin: {
-            plugins: [
-                // $.imagemin.gifsicle(),
-                // $.imagemin.jpegtran(),
-                $.imagemin.optipng({
-                    optimizationLevel: 5,
-                    bitDepthReduction: true,
-                    colorTypeReduction: false,
-                    paletteReduction: true
-                }),
-                // $.imagemin.svgo()
-            ],
-            options: {
-                verbose: true
-            }
+            // Default is 2 (8 trials)
+            optimizationLevel: 5,
+            keepBitDepth: false,
+            keepColorType: true,
+            keepPalette: false,
+            keepIDAT: false,
         }
+        // imagemin: {
+        //     plugins: [
+        //         // $.imagemin.gifsicle(),
+        //         // $.imagemin.jpegtran(),
+        //         $.imagemin.optipng({
+        //             optimizationLevel: 5,
+        //             bitDepthReduction: true,
+        //             colorTypeReduction: false,
+        //             paletteReduction: true
+        //         }),
+        //         // $.imagemin.svgo()
+        //     ],
+        //     options: {
+        //         verbose: true
+        //     }
+        // }
     },
 // watched filename patterns
 // -----------------------------------------------------------------------------
@@ -224,8 +224,8 @@ function resizeStream(dirname, size) {
             .pipe(filterCompressables)
                 // Measure file-by-file byte difference
                 .pipe($.bytediff.start())
-                    // .pipe($.imageminOptipng(settings.imagemin)())
-                    .pipe($.imagemin(settings.imagemin.plugins, settings.imagemin.options))
+                    .pipe($.imageminOptipng(settings.imagemin)())
+                    // .pipe($.imagemin(settings.imagemin.plugins, settings.imagemin.options))
                 .pipe($.bytediff.stop())
             .pipe(filterCompressables.restore)
         // Restore non-PNG files to stream
