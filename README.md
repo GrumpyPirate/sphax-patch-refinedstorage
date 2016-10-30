@@ -1,6 +1,8 @@
 ![RefinedStorage PureBDCraft Patch](./previews/Patch-Preview-256x.png)
 
 ## A [PureBDCraft](http://bdcraft.net/) patch for the [RefinedStorage](https://minecraft.curseforge.com/projects/refined-storage) Minecraft mod
+- Source designs are found under [`/source-designs`](./source-designs)
+- Generated texture packs (including zips) are found under [`/size-packs`](./size-packs)
 
 ## Uses [Sphaxify](https://github.com/GrumpyPirate/Sphaxify) to build and optimise packs
 ### To install locally:
