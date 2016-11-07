@@ -16,8 +16,7 @@
     "powered": {
       "true": {
         "textures": {
-          "torch": "refinedstorage:blocks/detector_side_on",
-          "2": "refinedstorage:blocks/detector_side_on"
+          "torch": "refinedstorage:blocks/detector_side_on"
         }
       },
       "false": {
