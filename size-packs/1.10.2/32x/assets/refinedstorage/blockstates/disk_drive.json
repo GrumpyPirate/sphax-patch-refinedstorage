@@ -4,7 +4,8 @@
     "model": "cube",
     "textures": {
       "particle": "refinedstorage:blocks/disk_drive",
-      "down": "refinedstorage:blocks/disk_drive_bottom",
+      // "down": "refinedstorage:blocks/disk_drive_bottom",
+      "down": "refinedstorage:blocks/bottom",
       "up": "refinedstorage:blocks/disk_drive_top",
       "north": "refinedstorage:blocks/disk_drive",
       "east": "refinedstorage:blocks/disk_drive_side",
