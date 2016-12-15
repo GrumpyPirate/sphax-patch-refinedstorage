@@ -1,6 +1,3 @@
-# Ignore these
-Original/
-
 # ... but always include these
 !/src/**
 !/dist/**
