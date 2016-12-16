@@ -1,0 +1,25 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "cube",
+    "textures": {
+      "particle": "refinedstorage:blocks/disk_manipulator",
+      "down": "refinedstorage:blocks/side",
+      "up": "refinedstorage:blocks/side",
+      "north": "refinedstorage:blocks/disk_manipulator",
+      "east": "refinedstorage:blocks/disk_manipulator",
+      "south": "refinedstorage:blocks/disk_manipulator",
+      "west": "refinedstorage:blocks/disk_manipulator"
+    }
+  },
+  "variants": {
+    "inventory": [
+      {
+        "transform": "forge:default-block"
+      }
+    ],
+    "normal": {
+      "model": "cube"
+    }
+  }
+}
