@@ -14,3 +14,7 @@
 - Once complete, use the following commands:
  - `npm run build` - build every 512x/256x/128x/64x/32x size pack from the source files
  - `npm run zip` - build *and* generate zip files for the pack
+
+
+## Notes
+- Storage parts should be redone at some point in the future, they're not quite as good as they could be.
