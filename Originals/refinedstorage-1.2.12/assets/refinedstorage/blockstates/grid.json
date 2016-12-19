@@ -1,0 +1,82 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "cube",
+    "textures": {
+      "particle": "refinedstorage:blocks/side",
+      "north": "refinedstorage:blocks/grid_disconnected",
+      "east": "refinedstorage:blocks/grid_left",
+      "south": "refinedstorage:blocks/grid_back",
+      "west": "refinedstorage:blocks/grid_right",
+      "up": "refinedstorage:blocks/grid_top",
+      "down": "refinedstorage:blocks/bottom"
+    }
+  },
+  "variants": {
+    "connected": {
+      "true": {
+        "textures": {
+          "north_normal": "refinedstorage:blocks/grid_front_connected",
+          "north_crafting": "refinedstorage:blocks/grid_crafting_front_connected",
+          "north_pattern": "refinedstorage:blocks/grid_pattern_front_connected",
+          "north_fluid": "refinedstorage:blocks/grid_fluid_front_connected"
+        }
+      },
+      "false": {
+        "textures": {
+          "north_normal": "refinedstorage:blocks/grid_front",
+          "north_crafting": "refinedstorage:blocks/grid_crafting_front",
+          "north_pattern": "refinedstorage:blocks/grid_pattern_front",
+          "north_fluid": "refinedstorage:blocks/grid_fluid_front"
+        }
+      }
+    },
+    "type": {
+      "normal": {
+        "textures": {
+          "north": "#north_normal"
+        }
+      },
+      "crafting": {
+        "textures": {
+          "north": "#north_crafting"
+        }
+      },
+      "pattern": {
+        "textures": {
+          "north": "#north_pattern"
+        }
+      },
+      "fluid": {
+        "textures": {
+          "north": "#north_fluid",
+          "east": "refinedstorage:blocks/grid_fluid_left",
+          "south": "refinedstorage:blocks/grid_fluid_back",
+          "west": "refinedstorage:blocks/grid_fluid_right",
+          "up": "refinedstorage:blocks/grid_fluid_top",
+          "down": "refinedstorage:blocks/bottom"
+        }
+      }
+    },
+    "direction": {
+      "north": {
+        "y": 0
+      },
+      "east": {
+        "y": 90
+      },
+      "south": {
+        "y": 180
+      },
+      "west": {
+        "y": 270
+      },
+      "up": {
+        "x": 270
+      },
+      "down": {
+        "x": 90
+      }
+    }
+  }
+}
