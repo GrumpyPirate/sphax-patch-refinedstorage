@@ -4,8 +4,11 @@
 - Source designs are found under [`/source-designs`](./source-designs)
 - Generated texture packs (including zips) are found under [`/size-packs`](./size-packs)
 
+## To install
+Simply download the latest release, or grab one of the zips directly from [the size packs directory](./size-packs/).
+
 ## Uses [Sphaxify](https://github.com/GrumpyPirate/Sphaxify) to build and optimise packs
-### To install locally:
+### To build locally:
 - Install [Node.js](https://nodejs.org/en/)
 - Install [ImageMagick](http://www.imagemagick.org/script/binary-releases.php)
 - Install [GraphicsMagick](http://www.graphicsmagick.org/download.html)
