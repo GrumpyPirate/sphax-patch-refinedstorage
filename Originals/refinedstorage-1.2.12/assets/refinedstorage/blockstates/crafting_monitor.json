@@ -1,0 +1,52 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "cube",
+    "textures": {
+      "particle": "refinedstorage:blocks/crafting_monitor_front",
+      "north": "refinedstorage:blocks/crafting_monitor_front",
+      "east": "refinedstorage:blocks/crafting_monitor_left",
+      "south": "refinedstorage:blocks/crafting_monitor_back",
+      "west": "refinedstorage:blocks/crafting_monitor_right",
+      "up": "refinedstorage:blocks/crafting_monitor_top",
+      "down": "refinedstorage:blocks/bottom"
+    }
+  },
+  "variants": {
+    "inventory": [
+      {
+        "transform": "forge:default-block",
+        "y": 0
+      }
+    ],
+    "connected": {
+      "true": {
+        "textures": {
+          "north": "refinedstorage:blocks/crafting_monitor_connected_front"
+        }
+      },
+      "false": {
+      }
+    },
+    "direction": {
+      "north": {
+        "y": 0
+      },
+      "east": {
+        "y": 90
+      },
+      "south": {
+        "y": 180
+      },
+      "west": {
+        "y": 270
+      },
+      "up": {
+        "x": 270
+      },
+      "down": {
+        "x": 90
+      }
+    }
+  }
+}

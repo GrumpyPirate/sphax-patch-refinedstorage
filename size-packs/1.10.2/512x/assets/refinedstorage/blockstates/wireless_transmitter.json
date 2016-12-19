@@ -1,0 +1,32 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "transmitter_side": "refinedstorage:blocks/wireless_transmitter_disconnected"
+    },
+    "model": "refinedstorage:wireless_transmitter",
+    "uvlock": true
+  },
+  "variants": {
+    "inventory": {
+      "model": "refinedstorage:wireless_transmitter_item",
+      "transform": "forge:default-block"
+    },
+    "connected": {
+      "true": {
+        "model": "refinedstorage:wireless_transmitter",
+        "textures": {
+          "transmitter_side": "refinedstorage:blocks/wireless_transmitter_connected"
+        },
+        "uvlock": true
+      },
+      "false": {
+        "model": "refinedstorage:wireless_transmitter",
+        "textures": {
+          "transmitter_side": "refinedstorage:blocks/wireless_transmitter_disconnected"
+        },
+        "uvlock": true
+      }
+    }
+  }
+}

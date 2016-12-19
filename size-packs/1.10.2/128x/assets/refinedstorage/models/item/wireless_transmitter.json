@@ -1,0 +1,21 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "textures": {
+      "transmitter_side": "refinedstorage:blocks/wireless_transmitter_disconnected"
+    },
+    "elements": [
+        {
+            "name": "transmitter",
+            "from": [ 7.0, 0.0, 7.0 ],
+            "to": [ 9.0, 10.0, 9.0 ],
+            "faces": {
+                "north": { "texture": "#transmitter_side", "uv": [ 7.0, 5.0, 9.0, 16.0 ] },
+                "east": { "texture": "#transmitter_side", "uv": [ 7.0, 5.0, 9.0, 16.0 ] },
+                "south": { "texture": "#transmitter_side", "uv": [ 7.0, 5.0, 9.0, 16.0 ] },
+                "west": { "texture": "#transmitter_side", "uv": [ 7.0, 5.0, 9.0, 16.0 ] },
+                "up": { "texture": "#transmitter_side", "uv": [ 9.0, 14.0, 11.0, 16.0 ] },
+                "down": { "texture": "#transmitter_side", "uv": [ 9.0, 12.0, 11.0, 14.0 ] }
+            }
+        }
+    ]
+}
