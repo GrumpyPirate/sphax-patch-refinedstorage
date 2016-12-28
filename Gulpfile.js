@@ -25,6 +25,7 @@ var resizeables = [
     '**/*.png',
     // By default, don't resize GUIs (i.e. anything inside a gui/ or guis/ folder)
     '!**/{gui,guis}/**/*.png',
+    '!**/icons.png',
     // Add similar entries to the below to disable resizing for specific files, e.g.:
     // '!**/blocks/someBlock.png',
     // '!**/blocks/someOtherBlock.png',
