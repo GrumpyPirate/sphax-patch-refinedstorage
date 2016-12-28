@@ -1,4 +1,4 @@
-![RefinedStorage PureBDCraft Patch](./previews/Patch-Preview-256x.png)
+![RefinedStorage PureBDCraft Patch](./previews/logo.jpg)
 
 ## A [PureBDCraft](http://bdcraft.net/) patch for the [RefinedStorage](https://minecraft.curseforge.com/projects/refined-storage) Minecraft mod
 - Source designs are found under [`/source-designs`](./source-designs)
