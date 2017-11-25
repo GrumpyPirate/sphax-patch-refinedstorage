@@ -89,22 +89,6 @@ var settings = {
             keepPalette: false,
             keepIDAT: false,
         }
-        // imagemin: {
-        //     plugins: [
-        //         // $.imagemin.gifsicle(),
-        //         // $.imagemin.jpegtran(),
-        //         $.imagemin.optipng({
-        //             optimizationLevel: 5,
-        //             bitDepthReduction: true,
-        //             colorTypeReduction: false,
-        //             paletteReduction: true
-        //         }),
-        //         // $.imagemin.svgo()
-        //     ],
-        //     options: {
-        //         verbose: true
-        //     }
-        // }
     },
 // watched filename patterns
 // -----------------------------------------------------------------------------
@@ -226,7 +210,6 @@ function resizeStream(dirname, size) {
                 // Measure file-by-file byte difference
                 .pipe($.bytediff.start())
                     .pipe($.imageminOptipng(settings.imagemin)())
-                    // .pipe($.imagemin(settings.imagemin.plugins, settings.imagemin.options))
                 .pipe($.bytediff.stop())
             .pipe(filterCompressables.restore)
         // Restore non-PNG files to stream

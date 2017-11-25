@@ -1,0 +1,65 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "textures": {
+        "transmitter_side": "refinedstorage:blocks/wireless_transmitter_disconnected",
+        "transmitter_top": "refinedstorage:blocks/wireless_transmitter_disconnected",
+        "transmitter_down": "refinedstorage:blocks/wireless_transmitter_disconnected",
+        "transmitter_section_side": "refinedstorage:blocks/wireless_transmitter_disconnected",
+        "transmitter_section_up": "refinedstorage:blocks/wireless_transmitter_disconnected",
+        "transmitter_section_down": "refinedstorage:blocks/wireless_transmitter_disconnected"
+    },
+    "elements": [
+        {
+            "name": "transmitter",
+            "from": [ 7.0, 1.0, 7.0 ],
+            "to": [ 9.0, 10.0, 9.0 ],
+            "faces": {
+                "north": { "texture": "#transmitter_side", "uv": [ 0.0, 6.0, 2.0, 16.0 ] },
+                "east": { "texture": "#transmitter_side", "uv": [ 0.0, 6.0, 2.0, 16.0 ] },
+                "south": { "texture": "#transmitter_side", "uv": [ 0.0, 6.0, 2.0, 16.0 ] },
+                "west": { "texture": "#transmitter_side", "uv": [ 0.0, 6.0, 2.0, 16.0 ] },
+                "up": { "texture": "#transmitter_top", "uv": [ 2.0, 14.0, 4.0, 16.0 ] },
+                "down": { "texture": "#transmitter_down", "uv": [ 2.0, 12.0, 4.0, 14.0 ], "cullface": "down" }
+            }
+        },
+        {
+            "name": "base",
+            "from": [ 6.0, 0.0, 6.0 ],
+            "to": [ 10.0, 1.0, 10.0 ],
+            "faces": {
+                "north": { "texture": "#transmitter_section_side", "uv": [ 4.0, 11.0, 8.0, 12.0 ] },
+                "east": { "texture": "#transmitter_section_side", "uv": [ 4.0, 11.0, 8.0, 12.0 ] },
+                "south": { "texture": "#transmitter_section_side", "uv": [ 4.0, 11.0, 8.0, 12.0 ] },
+                "west": { "texture": "#transmitter_section_side", "uv": [ 4.0, 11.0, 8.0, 12.0 ] },
+                "up": { "texture": "#transmitter_section_up", "uv": [ 4.0, 12.0, 8.0, 16.0 ] },
+                "down": { "texture": "#transmitter_section_down", "uv": [ 8.0, 12.0, 12.0, 16.0 ] }
+            }
+        },
+        {
+            "name": "section1",
+            "from": [ 6.0, 2.0, 6.0 ],
+            "to": [ 10.0, 3.0, 10.0 ],
+            "faces": {
+                "north": { "texture": "#transmitter_section_side", "uv": [ 4.0, 11.0, 8.0, 12.0 ] },
+                "east": { "texture": "#transmitter_section_side", "uv": [ 4.0, 11.0, 8.0, 12.0 ] },
+                "south": { "texture": "#transmitter_section_side", "uv": [ 4.0, 11.0, 8.0, 12.0 ] },
+                "west": { "texture": "#transmitter_section_side", "uv": [ 4.0, 11.0, 8.0, 12.0 ] },
+                "up": { "texture": "#transmitter_section_up", "uv": [ 4.0, 12.0, 8.0, 16.0 ] },
+                "down": { "texture": "#transmitter_section_down", "uv": [ 8.0, 12.0, 12.0, 16.0 ] }
+            }
+        },
+        {
+            "name": "section2",
+            "from": [ 6.0, 4.0, 6.0 ],
+            "to": [ 10.0, 5.0, 10.0 ],
+            "faces": {
+                "north": { "texture": "#transmitter_section_side", "uv": [ 4.0, 11.0, 8.0, 12.0 ] },
+                "east": { "texture": "#transmitter_section_side", "uv": [ 4.0, 11.0, 8.0, 12.0 ] },
+                "south": { "texture": "#transmitter_section_side", "uv": [ 4.0, 11.0, 8.0, 12.0 ] },
+                "west": { "texture": "#transmitter_section_side", "uv": [ 4.0, 11.0, 8.0, 12.0 ] },
+                "up": { "texture": "#transmitter_section_up", "uv": [ 4.0, 12.0, 8.0, 16.0 ] },
+                "down": { "texture": "#transmitter_section_down", "uv": [ 8.0, 12.0, 12.0, 16.0 ] }
+            }
+        }
+    ]
+}
