@@ -83,7 +83,7 @@ var gulp = require('gulp'),
 var settings = {
         imagemin: {
             // Default is 2 (8 trials)
-            optimizationLevel: 5,
+            optimizationLevel: 6,
             keepBitDepth: false,
             keepColorType: true,
             keepPalette: false,

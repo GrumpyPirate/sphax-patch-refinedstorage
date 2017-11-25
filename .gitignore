@@ -1,6 +1,6 @@
-# ... but always include these
-!/src/**
-!/dist/**
+# Folders
+Originals/
+size-packs/
 
 # OS
 .db
@@ -9,5 +9,4 @@
 # Node
 node_modules/
 npm-debug.log
-yarn.lock
 yarn-error.log
