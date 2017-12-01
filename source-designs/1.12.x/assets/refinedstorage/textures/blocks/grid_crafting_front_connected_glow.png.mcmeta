@@ -1,23 +1,30 @@
 {
-    "animation": {
-        "frametime": 3,
-        "frames": [
-            0,
-            0,
-            0,
-            0,
-            3,
-            3,
-            1,
-            1,
-            0,
-            0,
-            2,
-            0,
-            1,
-            3,
-            1,
-            1
-        ]
+  "ctm": {
+    "ctm_version": 1,
+    "layer": "CUTOUT",
+    "extra": {
+      "light": 15
     }
+  },
+  "animation": {
+    "frametime": 3,
+    "frames": [
+      0,
+      0,
+      0,
+      0,
+      3,
+      3,
+      1,
+      1,
+      0,
+      0,
+      2,
+      0,
+      1,
+      3,
+      1,
+      1
+    ]
+  }
 }
